@@ -1,0 +1,84 @@
+---
+title: "Enter Grades and Generate Student Report Cards"
+sidebarTitle: "Grades & Reports"
+description: "Record student grades, calculate averages, and generate official report cards and transcripts for students in Tianiazy."
+---
+
+Tianiazy's grading module covers the complete assessment cycle: entering marks subject by subject, calculating weighted averages automatically, and producing printable, school-branded report cards that you can distribute digitally or on paper. Every grade is stored in the student's permanent academic record and contributes to exam preparation tracking aligned to the CEPE, BEPC, and Bac.
+
+## Entering Grades
+
+<Steps>
+  <Step title="Open Grade Entry">
+    Go to **Grades > Grade Entry**.
+  </Step>
+  <Step title="Select Class, Subject, and Period">
+    Choose the class, the subject you are grading, and the assessment period (Trimestre 1, Trimestre 2, Trimestre 3, or the configured semester). The full student roster for that class loads automatically.
+  </Step>
+  <Step title="Enter Marks">
+    Type each student's mark in the column next to their name. Marks are entered out of the maximum score configured for that subject and assessment type (for example, out of 20). You can also flag a mark as **Absent** if the student did not sit the assessment.
+  </Step>
+  <Step title="Save">
+    Click **Save**. Tianiazy recalculates each student's subject average and overall class average instantly. No manual calculation is needed.
+  </Step>
+</Steps>
+
+## Grade Scales
+
+Admins configure the grading scale that applies across the school from **Settings > Grading**. Common configurations include:
+
+| Scale | Range | Typical use |
+|---|---|---|
+| French numeric | 0 – 20 | Standard in Madagascar for most levels |
+| Percentage | 0 – 100 | Used by some private and international schools |
+| Letter grades | A – F | For schools following anglophone curricula |
+
+When you change the grade scale, Tianiazy recalculates all existing entries against the new scale automatically so that historical records remain consistent. You can also set subject-specific weightings (coefficients) from the same settings page, which are applied when calculating trimester and annual averages.
+
+## Report Cards
+
+<Steps>
+  <Step title="Open Report Cards">
+    Go to **Reports > Report Cards**.
+  </Step>
+  <Step title="Select Class and Period">
+    Choose the class and the assessment period you want to generate report cards for.
+  </Step>
+  <Step title="Review and Add Comments">
+    Tianiazy displays a preview of each student's report card with all marks and calculated averages filled in. Teachers can add a personalised comment for each student in the **Teacher's Remark** field before finalising.
+  </Step>
+  <Step title="Generate PDFs">
+    Click **Generate**. Tianiazy creates a PDF report card for every student in the class at once. The process takes a few seconds even for large classes.
+  </Step>
+  <Step title="Distribute">
+    Choose how to share the report cards:
+    - **Digital** — click **Send to Parents** to push each report card directly to the parent workspace. Parents are notified immediately.
+    - **Print** — click **Download All** to get a single PDF containing all report cards, ready for batch printing and physical distribution.
+  </Step>
+</Steps>
+
+## Student Transcripts
+
+A student's complete academic history — all grades across all years enrolled in the school — is available as a printable transcript.
+
+1. Open the student's profile from **Students > [Student Name]**.
+2. Go to the **Documents** tab.
+3. Click **Transcript**.
+4. Select the date range or academic years to include.
+5. Click **Generate Transcript**. The document is created as a PDF and saved to the student's profile.
+
+Transcripts are useful for school-leaving certificates, scholarship applications, and transfers to another institution.
+
+## Parent Access
+
+Parents do not need to wait for report cards to be distributed. From their own workspace, parents can:
+
+- View their child's marks for any subject and period at any time
+- See the class average alongside their child's result for context
+- Download the official PDF report card once it has been generated and released by the school
+
+No additional setup is required — access is granted automatically as soon as the parent account is linked to the student profile.
+
+<Note>
+  Report cards include the school logo, the start and end dates of the assessment period, each student's class rank, and teacher signatures where digital signature has been configured in **Settings > Report Cards**. Make sure these details are set up before you generate report cards for the first time.
+</Note>

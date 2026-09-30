@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Tianiazy",
+  "projectDescription": "Tianiazy is an all-in-one web and mobile school management platform covering admissions, attendance, grades, fees, payroll, communication, and more — with role-based workspaces in French and English for schools in Madagascar.",
   "theme": "almond",
-  "name": "Tianiazy",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@tianiazy.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Se connecter / Log In",
-      "href": "https://app.tianiazy.com"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -103,7 +84,21 @@
       }
     ]
   },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Admissions and enrollment management",
+    "Attendance tracking (students and staff)",
+    "Timetable and schedule management",
+    "Grades, report cards, and transcripts",
+    "Homework and online quizzes",
+    "Exam preparation aligned to CEPE, BEPC, and Bac",
+    "Fee collection with MVola, Orange Money, and Airtel Money",
+    "Payroll management",
+    "Canteen, transport, and dormitory management",
+    "Internal messaging system",
+    "School website builder",
+    "Role-based workspaces (admin, teacher, student, parent, accountant, receptionist)",
+    "Bilingual interface (French and English)",
+    "Hosted on Cloudflare for fast global performance"
+  ],
+  "publicApiSurface": []
 }

@@ -1,0 +1,81 @@
+---
+title: "Student Admissions and Enrollment Management"
+sidebarTitle: "Admissions"
+description: "Manage student admissions from application to enrollment. Create admission forms, review applications, and register new students in Tianiazy."
+---
+
+Tianiazy's admissions module covers the full enrollment lifecycle — from the moment a family submits an application to the moment a student is assigned to a class and academic year. Every step is tracked in one place, giving admissions staff a clear view of each applicant's progress.
+
+## Admissions Workflow
+
+<Steps>
+  <Step title="Open Admissions">
+    Navigate to **Admissions > New Application** to create a fresh application form for an incoming student.
+  </Step>
+  <Step title="Fill Application Form">
+    Enter the student's details: full name, date of birth, previous school, and parent or guardian contact information. Attach any required documents (birth certificate, previous school report, vaccination record) directly to the application.
+  </Step>
+  <Step title="Review & Approve">
+    Admissions staff open each application from the **Admissions Dashboard** and mark it as **Accepted**, **Waitlisted**, or **Rejected**. You can add internal notes visible only to staff.
+  </Step>
+  <Step title="Complete Enrollment">
+    For accepted applicants, assign the student to a class and academic year. This creates the student's profile in Tianiazy and makes them available in all other modules (attendance, grades, fees, etc.).
+  </Step>
+  <Step title="Notify Parents">
+    The system automatically sends an SMS and/or email confirmation to the parent or guardian with the enrollment decision and next steps.
+  </Step>
+</Steps>
+
+## Managing Applications
+
+Use the **Admissions Dashboard** to filter, search, and update applications. Each application carries one of the following statuses:
+
+| Status | Meaning |
+|---|---|
+| **Pending** | Application submitted but not yet reviewed |
+| **Under Review** | Admissions staff has opened and is evaluating the application |
+| **Accepted** | Application approved; student is ready for full enrollment |
+| **Waitlisted** | Application held pending available placement |
+| **Rejected** | Application declined; parent is notified with the configured message |
+
+## Bulk Enrollment
+
+To enroll a large group of students at once — for example, at the start of a new school year — use the CSV import tool.
+
+1. Go to **Admin > Admissions > Import**.
+2. Download the CSV template provided on that page.
+3. Fill in the required columns:
+
+```csv
+first_name,last_name,date_of_birth,class,parent_email
+Marie,Rakoto,2012-03-15,6ème A,rakoto@email.mg
+Jean,Razafy,2011-07-22,5ème B,razafy@email.mg
+```
+
+4. Upload the completed file and click **Import**. Tianiazy validates each row and reports any errors before saving.
+
+The required columns are:
+
+| Column | Format |
+|---|---|
+| `first_name` | Text |
+| `last_name` | Text |
+| `date_of_birth` | YYYY-MM-DD |
+| `class` | Exact class name as configured in Tianiazy |
+| `parent_email` | Valid email address |
+
+<Tip>
+  Use the Admissions Dashboard to view a summary of all applications by status for the current academic year. You can filter by date range, class level, or application status to quickly spot bottlenecks.
+</Tip>
+
+## Re-enrollment
+
+At the start of each new academic year, returning students must be re-enrolled so they appear in the correct class for the new year.
+
+1. Go to **Admissions > Re-enroll**.
+2. Select the academic year you are promoting students into.
+3. Choose the class or group of students to re-enroll. Tianiazy pre-fills the next logical class for each student based on their current placement.
+4. Adjust any promotions, retentions, or transfers as needed.
+5. Click **Confirm Re-enrollment** to update all student profiles at once.
+
+Students who are not re-enrolled remain in an **Inactive** state and do not appear in attendance, grade, or fee workflows for the new year.

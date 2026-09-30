@@ -1,47 +1,76 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with Tianiazy in Minutes"
+sidebarTitle: "Quickstart"
+description: "Set up your school on Tianiazy in four steps: create your account, configure your school profile, invite staff, and enroll your first students."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This quickstart walks you through the essential steps to get your school fully operational on Tianiazy. It is designed for **school administrators** setting up Tianiazy for the first time. By the end, you will have a live school profile, active staff accounts, and at least one enrolled student — all ready to use the platform's full feature set.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Create Your Account">
+    Navigate to [app.tianiazy.com](https://app.tianiazy.com) and click **Get Started**. Fill in the registration form with the following details:
 
-    ```bash
-    npm install your-package
-    ```
+    - **School Name** — enter the official name of your institution.
+    - **Country** — select **Madagascar** from the dropdown.
+    - **Language** — choose **French** or **English** as your school's default language. You can change this later.
+    - **Administrator Email** — use an email address you have access to; this becomes your login.
+    - **Password** — choose a strong password of at least 8 characters.
+
+    After submitting the form, check your inbox for a confirmation email and click the **Verify Email** link. Your school account is now active.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
 
-    ```bash
-    your-cli init
-    ```
+  <Step title="Configure Your School Profile">
+    Once you log in for the first time, you are taken to the **School Setup** wizard. Complete each section to prepare your school profile for daily use:
+
+    - **Logo** — upload your school's official logo (PNG or JPG, minimum 200×200 px). It appears on report cards, invoices, and your school website.
+    - **Academic Year** — set the start and end dates of the current academic year (for example, 1 September 2025 to 30 June 2026).
+    - **Grading Scale** — define your grading system. You can use numeric scales (0–20, 0–100) or letter grades (A–F). Set passing thresholds per grade level if needed.
+    - **Active Modules** — toggle on the modules your school uses. You can enable or disable any module later from **Settings > Modules**.
+
+    Click **Save Profile** to confirm your configuration and proceed to the main dashboard.
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
 
-    ```bash
-    your-cli start
-    ```
+  <Step title="Invite Staff">
+    Navigate to **Users > Staff** in the left sidebar and click **Invite Staff Member**. For each staff member:
+
+    1. Enter their **full name** and **email address**.
+    2. Select their **role** from the dropdown:
+       - **Admin** — full platform access and school settings.
+       - **Teacher** — classroom management, grades, attendance, and homework.
+       - **Accountant** — fee collection, payroll, and financial reports.
+       - **Receptionist** — admissions, visitor log, and front-desk tools.
+    3. Click **Send Invitation**.
+
+    Each invited staff member receives an email with a secure login link. They set their own password on first login. You can invite multiple staff members at once by uploading a CSV file from the **Bulk Import** option on the same page.
+  </Step>
+
+  <Step title="Enroll Your First Students">
+    Navigate to **Admissions > New Student** and complete the enrollment form:
+
+    - **Personal Details** — full name, date of birth, gender, and national ID or birth certificate number.
+    - **Contact Information** — home address and emergency contact.
+    - **Class Assignment** — select the academic level and class section the student belongs to (for example, *Classe de 6ème — Section A*).
+    - **Parent / Guardian** — enter the parent's name, phone number, and email. Tianiazy automatically creates a parent account and sends them a login invitation if you check **Notify Parent**.
+
+    Click **Enroll Student** to confirm. The student now appears on the class register, and their parent (if notified) can log in to the family workspace immediately.
   </Step>
 </Steps>
 
 <Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
-
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
+  You can switch between **French and English** at any time from the language selector in the top navigation bar. Your preference is saved automatically and applies across all pages, notifications, and generated documents.
 </Tip>
+
+---
+
+## Next Steps
+
+Your school is live. Explore the sections below to continue configuring Tianiazy and learn how each role uses the platform.
+
+<CardGroup cols={2}>
+  <Card title="Roles & Workspaces" icon="users" href="/roles-and-workspaces">
+    Learn what each role — admin, teacher, student, parent, accountant, receptionist — can see and do.
+  </Card>
+  <Card title="Admissions" icon="graduation-cap" href="/school-management/admissions">
+    Set up your admissions pipeline, define enrollment periods, and manage applications at scale.
+  </Card>
+</CardGroup>
